@@ -74,5 +74,4 @@ class DefaultFirebaseOptions {
     storageBucket: 'myfitnesan.firebasestorage.app',
     measurementId: 'G-SPV6WFDC86',
   );
-
 }

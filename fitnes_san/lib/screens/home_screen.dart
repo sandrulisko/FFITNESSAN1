@@ -55,4 +55,4 @@ class HomeScreen extends StatelessWidget {
   void _deleteWorkout(String id) {
     FirebaseFirestore.instance.collection('workouts').doc(id).delete();
   }
-} 
+}
