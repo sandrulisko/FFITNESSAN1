@@ -31,15 +31,12 @@ class AddWorkoutScreen extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Dodanie treningu do Firestore
                 FirebaseFirestore.instance.collection('workouts').add({
                   'type': typeController.text,
                   'duration': int.parse(durationController.text),
                   'calories': int.parse(caloriesController.text),
                   'timestamp': Timestamp.now(),
                 });
-
-                // Powrót na poprzedni ekran
                 Navigator.pop(context);
               },
               child: Text('Dodaj'),
@@ -50,3 +47,4 @@ class AddWorkoutScreen extends StatelessWidget {
     );
   }
 }
+
